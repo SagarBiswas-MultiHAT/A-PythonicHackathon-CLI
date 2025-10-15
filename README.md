@@ -1,4 +1,4 @@
-# Sagar - A Pythonic Hackathon
+# A Pythonic Hackathon
 
 Sagar is a virtual assistant designed for aspiring cybersecurity professionals and CSE students. It processes user commands to open websites, play music, or provide AI-generated responses, offering a hands-on experience with automation and AI technologies.
 
@@ -9,7 +9,7 @@ Video: https://www.facebook.com/share/v/16o1vigQZn/
 1. Clone and enter the project
 
 ```powershell
-git clone https://github.com/SagarBiswas-MultiHAT/Text-TO-Text_Ai-Assistant_multi-line.git
+git clone https://github.com/SagarBiswas-MultiHAT/A_Pythonic_Hackathon.git
 cd Text-TO-Text_Ai-Assistant_multi-line
 ```
 
