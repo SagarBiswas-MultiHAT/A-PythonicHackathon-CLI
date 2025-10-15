@@ -10,7 +10,7 @@ Video: https://www.facebook.com/share/v/16o1vigQZn/
 
 ```powershell
 git clone https://github.com/SagarBiswas-MultiHAT/A_Pythonic_Hackathon.git
-cd Text-TO-Text_Ai-Assistant_multi-line
+cd A_Pythonic_Hackathon
 ```
 
 2. Create and activate a virtual environment
