@@ -218,7 +218,7 @@ ruff check .
 
 ---
 
-## JailBreaked prompt
+## ⚠️ Unsafe Prompt Example (For Educational Awareness Only)
 
 ```
 """
