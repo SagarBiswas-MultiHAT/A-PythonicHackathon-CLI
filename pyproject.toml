@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sagar-assistant"
+version = "1.0.0"
+description = "Sagar is a virtual assistant designed for aspiring cybersecurity professionals and CSE students."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sagar Biswas" }]
+keywords = ["assistant", "cli", "cybersecurity", "education"]
+dependencies = [
+  "python-dotenv>=1.0.0",
+  "groq>=0.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4.0",
+  "ruff>=0.5.0",
+]
+
+[project.scripts]
+sagar = "sagar_cli:single_line"
+sagar-multi = "sagar_cli:multi_line"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
