@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import os
 import webbrowser
+from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Callable
 
 from dotenv import load_dotenv
 from groq import Groq
@@ -54,7 +54,8 @@ def _ai_process(command: str, context: list[dict] | None) -> str:
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         raise RuntimeError(
-            "GROQ_API_KEY is not set. Create a .env file with GROQ_API_KEY=your_key or set it in the environment."
+            "GROQ_API_KEY is not set. Create a .env file with GROQ_API_KEY=your_key "
+            "or set it in the environment."
         )
 
     client = Groq(api_key=api_key)
@@ -86,7 +87,8 @@ def _ai_process(command: str, context: list[dict] | None) -> str:
             continue
 
     raise RuntimeError(
-        f"All model attempts failed (tried: {', '.join(_get_model_fallbacks())}). Last error: {last_err}"
+        "All model attempts failed (tried: "
+        f"{', '.join(_get_model_fallbacks())}). Last error: {last_err}"
     )
 
 
@@ -100,7 +102,8 @@ def _trim_context(context: list[dict], max_messages: int) -> list[dict]:
 def help_text() -> str:
     return (
         "Commands:\n"
-        "  open <site>      (google, youtube, facebook, instagram, github, stackoverflow, linkedin, whatsapp, chatgpt, gemini, chatbot)\n"
+        "  open <site>      (google, youtube, facebook, instagram, github, "
+        "stackoverflow, linkedin, whatsapp, chatgpt, gemini, chatbot)\n"
         "  play <song>      (try: list songs)\n"
         "  list songs       (show available songs)\n"
         "  help             (show this help)\n"
