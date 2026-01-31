@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 import webbrowser
 from dataclasses import dataclass
-from typing import Callable, Optional, Tuple
+from typing import Callable
 
 from dotenv import load_dotenv
 from groq import Groq
@@ -49,7 +49,7 @@ def _normalize_song_key(text: str) -> str:
     return " ".join(text.strip().lower().split())
 
 
-def _ai_process(command: str, context: Optional[list[dict]]) -> str:
+def _ai_process(command: str, context: list[dict] | None) -> str:
     load_dotenv()
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
@@ -110,11 +110,11 @@ def help_text() -> str:
 
 def handle_command(
     command: str,
-    context: Optional[list[dict]],
-    config: Optional[AssistantConfig] = None,
+    context: list[dict] | None,
+    config: AssistantConfig | None = None,
     opener: Callable[[str], bool] = webbrowser.open,
-    ai_process: Callable[[str, Optional[list[dict]]], str] = _ai_process,
-) -> Tuple[Optional[list[dict]], str]:
+    ai_process: Callable[[str, list[dict] | None], str] = _ai_process,
+) -> tuple[list[dict] | None, str]:
     if config is None:
         config = default_config()
 
