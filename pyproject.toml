@@ -28,6 +28,8 @@ sagar-multi = "sagar_cli:multi_line"
 
 [tool.ruff]
 line-length = 100
+
+[tool.ruff.lint]
 select = ["E", "F", "I", "UP"]
 
 [tool.pytest.ini_options]

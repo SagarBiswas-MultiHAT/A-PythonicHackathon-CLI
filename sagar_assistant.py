@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
-from typing import Callable, Dict, List, Optional, Tuple
 import os
 import webbrowser
+from dataclasses import dataclass
+from typing import Callable, Optional, Tuple
 
 from dotenv import load_dotenv
 from groq import Groq
@@ -13,13 +13,13 @@ import musicLibraries
 
 @dataclass(frozen=True)
 class AssistantConfig:
-    url_map: Dict[str, str]
-    music_links: Dict[str, str]
-    model_fallbacks: List[str]
+    url_map: dict[str, str]
+    music_links: dict[str, str]
+    model_fallbacks: list[str]
     max_context_messages: int
 
 
-def _get_model_fallbacks() -> List[str]:
+def _get_model_fallbacks() -> list[str]:
     preferred = os.getenv("GROQ_MODEL")
     return [m for m in [preferred, "llama-3.3-70b-versatile", "llama-3.1-8b-instant"] if m]
 
@@ -49,7 +49,7 @@ def _normalize_song_key(text: str) -> str:
     return " ".join(text.strip().lower().split())
 
 
-def _ai_process(command: str, context: Optional[List[dict]]) -> str:
+def _ai_process(command: str, context: Optional[list[dict]]) -> str:
     load_dotenv()
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
@@ -90,7 +90,7 @@ def _ai_process(command: str, context: Optional[List[dict]]) -> str:
     )
 
 
-def _trim_context(context: List[dict], max_messages: int) -> List[dict]:
+def _trim_context(context: list[dict], max_messages: int) -> list[dict]:
     if max_messages <= 0:
         return []
     keep = max_messages * 2
@@ -110,11 +110,11 @@ def help_text() -> str:
 
 def handle_command(
     command: str,
-    context: Optional[List[dict]],
+    context: Optional[list[dict]],
     config: Optional[AssistantConfig] = None,
     opener: Callable[[str], bool] = webbrowser.open,
-    ai_process: Callable[[str, Optional[List[dict]]], str] = _ai_process,
-) -> Tuple[Optional[List[dict]], str]:
+    ai_process: Callable[[str, Optional[list[dict]]], str] = _ai_process,
+) -> Tuple[Optional[list[dict]], str]:
     if config is None:
         config = default_config()
 
