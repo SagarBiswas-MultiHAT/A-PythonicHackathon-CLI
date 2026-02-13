@@ -1,5 +1,16 @@
 # A Pythonic Hackathon
 
+<div align="right">
+
+[![CI](https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/ci.yml?branch=main)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/actions)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/tests-pytest-orange)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/commits)
+[![Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/issues)
+
+</div>
+
 Sagar is a friendly, command-line virtual assistant for CSE students and aspiring cybersecurity professionals. It understands simple commands to open trusted websites, play curated music links, and answer questions using an AI model. The goal is to make automation and safe, educational AI interactions easy to explore from the terminal.
 
 Video demo: https://www.facebook.com/share/v/16o1vigQZn/
