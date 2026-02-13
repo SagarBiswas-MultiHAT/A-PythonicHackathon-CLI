@@ -2,12 +2,12 @@
 
 <div align="right">
 
-[![CI](https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/ci.yml?branch=main)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/SagarBiswas-MultiHAT/PythonicHackathon-CLI/ci.yml?branch=main)](https://github.com/SagarBiswas-MultiHAT/PythonicHackathon-CLI/actions)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-pytest-orange)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI)
+[![Tests](https://img.shields.io/badge/tests-pytest-orange)](https://github.com/SagarBiswas-MultiHAT/PythonicHackathon-CLI)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/commits)
-[![Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI)](https://github.com/SagarBiswas-MultiHAT/A-PythonicHackathon-CLI/issues)
+[![Last commit](https://img.shields.io/github/last-commit/SagarBiswas-MultiHAT/PythonicHackathon-CLI)](https://github.com/SagarBiswas-MultiHAT/PythonicHackathon-CLI/commits)
+[![Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/PythonicHackathon-CLI)](https://github.com/SagarBiswas-MultiHAT/PythonicHackathon-CLI/issues)
 
 </div>
 
